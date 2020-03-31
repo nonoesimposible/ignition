@@ -10,20 +10,6 @@ import sys
 class Install():
     def __init__(self):
         print("Installer Ready")
-#  ____            _          
-# | __ )  __ _ ___(_) ___ ___ 
-# |  _ \ / _` / __| |/ __/ __|
-# | |_) | (_| \__ \ | (__\__ \
-# |____/ \__,_|___/_|\___|___/
-    def allbasics(self):
-        self.neofetch()
-        self.gdebi()
-        self.redshift()
-        self.gnometweaks()
-        self.baobab()
-        self.wine()
-        self.safeeyes()
-        self.sl()
 
     # Organize by package manager
 
