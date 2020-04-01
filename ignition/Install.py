@@ -19,4 +19,4 @@ class Install():
         elif pkg_name in apps_by_pkg_manager["snapd"]:
             system("pkexec snap install " + pkg_name + " && exit")
         else:
-            print("Gdebi/custom installation procedures are not supported by this branch yet.")
+            print(f"Couldn't find package {pkg_name}. It's possible that it's an aptitude or Snap package with the wrong name, or it's Gdebi/custom installation package and is not supported by this branch yet.")
