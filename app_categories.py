@@ -105,10 +105,11 @@ apps_by_pkg_manager = {
 #         self.install_method = install_method
 
 
-class Category:
+class Category(list):
+    """ Almost the exact same thing as a list, but with an additional .name attribute. """
     def __init__(self, name, apps):
+        list.__init__(self, apps)
         self.name = name
-        self.apps = apps
 
 
 categories = [
