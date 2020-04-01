@@ -2,6 +2,8 @@
 Define the categorizations that the rest of the files will consider by. This
 is designed so that only one file has to be modified in order to add, move,
 or remove an app from a category.
+
+We have two methods of categorization: by package manager, or by category.
 """
 
 apps_by_pkg_manager = {
