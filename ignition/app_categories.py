@@ -28,6 +28,7 @@ class Category(list):
 
 categories = [
     Category("Basics", [
+        App("All Basics", "neofetch gdebi redshift gnome-tweaks baobab wine safeeyes", "apt"),
         App("Neofetch", "neofetch", "apt"),
         App("Gdebi", "gdebi", "apt"),
         App("Redshift", "redshift", "apt"),
