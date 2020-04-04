@@ -14,7 +14,7 @@ from Install import *
 class HomeWindow(Gtk.ApplicationWindow):
     def __init__(self):
         Gtk.Window.__init__(self, title="Ignition")
-        self.set_icon_from_file("ArmatureUngroup.svg")
+        self.set_icon_from_file("Armature.svg")
         # system("mkdir ~/.local/share/ignition/")
         # self.appdata = home+"/.local/share/ignition/"
 
