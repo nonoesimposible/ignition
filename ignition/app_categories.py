@@ -35,7 +35,8 @@ categories = [
         App("GNOME Tweaks", "gnome-tweaks", "apt"),
         App("Baobab", "baobab", "apt"),
         App("WINE", "wine", "apt"),
-        App("Safe Eyes", "safeeyes", "apt")
+        App("Safe Eyes", "safeeyes", "apt"),
+        App("Steamengine Locomotive", "sl", "apt"),
     ]),
     Category("Launchers", [
         App("Synapse", "synapse", "apt"),
@@ -50,6 +51,7 @@ categories = [
     ]),
     Category("Cloud", [
         App("YakYak", "yakyak", "snap"),
+        App("GNOME Gmail", "gnome-gmail", "apt")
     ]),
     Category("Games", [
         App("GNOME Games App", "gnome-games-app", "apt"),
@@ -63,7 +65,8 @@ categories = [
         App("Abiword", "abiword", "apt"),
         App("Gnumeric", "gnumeric", "apt"),
         App("μPad", "micropad", "snap"),
-        App("P3X Onenote", "p3x-onenote", "snap")
+        App("P3X Onenote", "p3x-onenote", "snap"),
+        App("ProjectLibre", "projectlibre", "snap")
     ]),
     Category("Themes", [
         App("Papirus Icon Theme", "papirus-icon-theme", "apt"),
@@ -76,11 +79,14 @@ categories = [
         App("Rhythmbox", "rhythmbox", "apt"),
         App("Spotify", "spotify", "snap"),
         App("PAVU Control", "pavucontrol", "apt"),
+        App("GStreamer Codecs", "gstreamer*", "apt"),
         App("GNOME Image Viewer", "eog", "apt"),
-        App("GNOME Videos", "totem", "apt")
+        App("GNOME Videos", "totem", "apt"),
+        App("Ubuntu Studio", "ubuntustudio-installer", "apt")
     ]),
     Category("Toys", [
         App("BB", "bb", "apt"),
+        App("AA Lib", "aalib", "apt")
     ]),
     Category("Terminals", [
         App("Tilix", "tilix", "apt"),
@@ -111,4 +117,3 @@ categories = [
         App("Krita", "krita", "snap")
     ])
 ]
-
