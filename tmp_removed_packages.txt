@@ -1,5 +1,4 @@
 ULauncher
-Google Tools
 Minecraft
 OPENOFFICE Desktop Editors
 Apache OpenOffice
