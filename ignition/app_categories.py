@@ -82,11 +82,11 @@ categories = [
         App("Rhythmbox", "rhythmbox", "apt"),
         App("Spotify", "spotify", "snap"),
         App("PAVU Control", "pavucontrol", "apt"),
-        App("Media Codecs", None, "custom", "sudo apt-get install gstreamer*; sudo add-apt-repository multiverse; sudo apt install ubuntu-restricted-extras"),
+        App("Media Codecs", None, "custom", "sudo apt install gstreamer*; sudo add-apt-repository multiverse; sudo apt install ubuntu-restricted-extras"),
         App("GNOME Image Viewer", "eog", "apt"),
         App("GNOME Videos", "totem", "apt"),
         App("Ubuntu Studio", "ubuntustudio-installer", "apt"),
-        App("Flash Player", "adobe-flashplugin adobe-flash-properties-gtk browser-plugin-freshplayer-pepperflash", "apt")
+        App("Flash Player", None, "custom", "sudo apt install adobe-flashplugin adobe-flash-properties-gtk; sudo apt install browser-plugin-freshplayer-pepperflash"")
     ]),
     Category("Toys", [
         App("BB", "bb", "apt"),
