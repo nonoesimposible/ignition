@@ -60,6 +60,9 @@ class HomeWindow(Gtk.ApplicationWindow):
         elif item.pkg_manager == "snap":
             print(f"pkexec snap install {item.pkg_name} && exit")
             # system("pkexec snap install " + pkg_name + " && exit")
+        elif item.pkg_manager == "custom":
+            for command in item.commands.split("\n"):
+                print(command)
         else:
             print(f"Something myseterious went wrong when trying to install {item.name}.")
 

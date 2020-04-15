@@ -7,16 +7,18 @@ We have two methods of categorization: by package manager, or by category.
 """
 
 class App:
-    def __init__(self, name, pkg_name, pkg_manager):
+    def __init__(self, name, pkg_name, pkg_manager, command = None):
         """
         name        :   human-readable, capitalized name
         pkg_name    :   name of the package used by the package manager (can be space-separated to install multiple packages if all the packages use the same package manager and the package manager allows it)
         pkg_manager :   package manager to use (currently supported is apt, snap
+        commands    :   if specified, a list of commands to run from the shell (pkg_manager must be "custom")
         """
 
         self.name = name
         self.pkg_name = pkg_name
         self.pkg_manager = pkg_manager
+        self.command = command
 
 
 class Category(list):
@@ -80,7 +82,7 @@ categories = [
         App("Rhythmbox", "rhythmbox", "apt"),
         App("Spotify", "spotify", "snap"),
         App("PAVU Control", "pavucontrol", "apt"),
-        App("GStreamer Codecs", "gstreamer*", "apt"),
+        App("Media Codecs", None, "custom", "sudo apt-get install gstreamer*; sudo add-apt-repository multiverse; sudo apt install ubuntu-restricted-extras"),
         App("GNOME Image Viewer", "eog", "apt"),
         App("GNOME Videos", "totem", "apt"),
         App("Ubuntu Studio", "ubuntustudio-installer", "apt"),
