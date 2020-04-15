@@ -1,6 +1,4 @@
 ULauncher
 Minecraft
-OPENOFFICE Desktop Editors
 Apache OpenOffice
 Pling Store
-Flash Player

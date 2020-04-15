@@ -62,6 +62,7 @@ categories = [
     ]),
     Category("Office", [
         App("Libreoffice Suite", "libreoffice-common libreoffice-writer libreoffice-impress libreoffice-base libreoffice-calc libreoffice-math libreoffice-draw", "apt"),
+        App("ONLYOFFICE Desktop Editors", "onlyoffice-desktopeditors", "snap"),
         App("Abiword", "abiword", "apt"),
         App("Gnumeric", "gnumeric", "apt"),
         App("μPad", "micropad", "snap"),
@@ -82,7 +83,8 @@ categories = [
         App("GStreamer Codecs", "gstreamer*", "apt"),
         App("GNOME Image Viewer", "eog", "apt"),
         App("GNOME Videos", "totem", "apt"),
-        App("Ubuntu Studio", "ubuntustudio-installer", "apt")
+        App("Ubuntu Studio", "ubuntustudio-installer", "apt"),
+        App("Flash Player", "adobe-flashplugin adobe-flash-properties-gtk browser-plugin-freshplayer-pepperflash", "apt")
     ]),
     Category("Toys", [
         App("BB", "bb", "apt"),
